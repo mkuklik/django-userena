@@ -48,6 +48,8 @@ class UserenaSignup(models.Model):
                                 verbose_name=_('user'),
                                 related_name='userena_signup')
 
+    username = models.CharField()
+
     last_active = models.DateTimeField(_('last active'),
                                        blank=True,
                                        null=True,
